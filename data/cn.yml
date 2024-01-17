@@ -1,19 +1,28 @@
 scripts:
   - <script rel="prefetch" async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-  - <script rel="preload" src="https://unpkg.com/blueimp-md5@^2.19.0/js/md5.min.js"></script>
-  - <script rel="preload" src="https://unpkg.com/lodash@^4.17.21/lodash.min.js"></script>
-
+  - <script rel="preload" src="https://lf9-cdn-tos.bytecdntp.com/cdn/expire-1-M/blueimp-md5/2.19.0/js/md5.min.js"></script>
+  - <script rel="preload" src="https://lf9-cdn-tos.bytecdntp.com/cdn/expire-1-M/lodash.js/4.17.21/lodash.min.js"></script>
+  # 此为字节跳动前端CDN
+  # url https://cdn.bytedance.com/
 css:
   - <link rel="stylesheet" href="https://fonts.loli.net/css?family=Rubik" />
 
 plugins:
   gitalk:
-    - <script rel="preload" src="https://unpkg.com/gitalk@^1.8.0/dist/gitalk.min.js"></script>
-    - <link rel="stylesheet" href="https://unpkg.com/gitalk@^1.8.0/dist/gitalk.css"/>
+    - <script rel="preload" src="https://lib.baomitu.com/gitalk/1.8.0/gitalk.min.js"></script>
+    - <link rel="stylesheet" href="https://lib.baomitu.com/gitalk/1.8.0/gitalk.css"/>
+    # 此为360前端CDN
+    # url https://cdn.baomitu.com/gitalk
   valine:
-    - <script rel="preload" src="https://unpkg.com/valine@^1.5.1/dist/Valine.min.js"></script>
-    - <script rel="preload" src="https://unpkg.com/leancloud-storage@^4.15.0/dist/av-min.js"></script>
+    - <script rel="preload" src="https://lib.baomitu.com/Valine/1.5.1/Valine.min.js"></script>
+    - <script rel="preload" src="https://fastly.jsdelivr.net/npm/leancloud-storage@4.15.2/dist/av-min.js"></script>
+    # 此第一个script为360前端CDN,第二个没找到用国内的jsdelivr.net镜像代替了
+    # url https://cdn.baomitu.com/Valine
   twikoo:
-    - <script rel="preload" src="https://unpkg.com/twikoo@^1.6.17/dist/twikoo.all.min.js"></script>
+    - <script rel="preload" src="https://lib.baomitu.com/twikoo/1.6.17/twikoo.all.min.js"></script>
+    # 此为360前端CDN，360前端库有更新的版本
+    # url https://cdn.baomitu.com/twikoo
   waline:
-   - <link rel="stylesheet" href="https://unpkg.com/@waline/client@v2/dist/waline.css"/>
+    - <link rel="stylesheet" href="https://lib.baomitu.com/waline/2.15.8/waline.css"/>
+    # 此为360前端CDN
+    # url https://cdn.baomitu.com/waline
